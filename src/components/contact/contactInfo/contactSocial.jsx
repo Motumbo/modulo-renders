@@ -2,24 +2,18 @@ import React from "react";
 import { Row, Col } from "react-flexbox-grid";
 import "./contactSocial.scss";
 
-
-import FacebookIcon from "../../../assets/contact/facebook.svg";
-import TwitterIcons from "../../../assets/contact/twitter.svg";
-import DribbleIcon from "../../../assets/contact/dribble.svg";
-
+import InstagramIcon from "../../../assets/contact/instagram.svg";
+import LinkedinIcon from "../../../assets/contact/linkedin.svg";
 
 const contactSocial = () => (
   <Row>
     <Col xs={12}>
       <Row center="xs">
-        <Col xs={12} lg={1} className="contact__social">
-          <img src={FacebookIcon} alt="facebook" />
+        <Col xs={6} lg={3} className="contact__social">
+          <img src={InstagramIcon} alt="Instagram" />
         </Col>
-        <Col xs={12} lg={1} className="contact__social">
-          <img src={TwitterIcons} alt="Twitter" />
-        </Col>
-        <Col xs={12} lg={1} className="contact__social">
-          <img src={DribbleIcon} alt="Dribble" />
+        <Col xs={6} lg={1} className="contact__social">
+          <img src={LinkedinIcon} alt="LinkedIn" />
         </Col>
       </Row>
     </Col>

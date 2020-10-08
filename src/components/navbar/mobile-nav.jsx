@@ -4,14 +4,14 @@ import { Link } from "react-scroll";
 import "./navbar.scss";
 // Assets
 import CloseIcons from '../../assets/navbar/mobile-close.svg';
-import Logo from "../../assets/navbar/logo-yellow.svg";
+import Logo from "../../assets/navbar/logo-yellow.png";
 
 const mobileNav = (props) => (
   <div className={`mobile__navbar ${props.isOpen ? "mobile__open" : ""}`}>
     <div className="mobile__navbar-close" onClick={props.closeMobileMenu}>
       <img src={CloseIcons} alt="close" />
     </div>
-    <div className="mobile__navbar-logo flex-center">
+    <div className="mobile__navbar-logo flex-center" >
       <Link
         to="hero"
         spy={true}
@@ -20,7 +20,7 @@ const mobileNav = (props) => (
         duration={500}
         onClick={props.closeMobileMenu}
       >
-        <img src={Logo} alt="logo" />
+        <img src={Logo} alt="logo" style={{maxWidth:"20vw"}} />
       </Link>
     </div>
     <div className="mobile__navbar-menu">
@@ -28,14 +28,14 @@ const mobileNav = (props) => (
         <li className="flex-center">
           <Link
             activeClass="active-link"
-            to="portfolio"
+            to="blog"
             spy={true}
             smooth={true}
             offset={-70}
             duration={500}
             onClick={props.closeMobileMenu}
           >
-            WORK
+            TRABAJOS
           </Link>
         </li>
         <li className="flex-center">
@@ -48,20 +48,7 @@ const mobileNav = (props) => (
             duration={500}
             onClick={props.closeMobileMenu}
           >
-            ABOUT
-          </Link>
-        </li>
-        <li className="flex-center">
-          <Link
-            activeClass="active-link"
-            to="blog"
-            spy={true}
-            smooth={true}
-            offset={-70}
-            duration={500}
-            onClick={props.closeMobileMenu}
-          >
-            BLOG
+            NOSOTROS
           </Link>
         </li>
         <li className="flex-center">
@@ -74,7 +61,7 @@ const mobileNav = (props) => (
             duration={500}
             onClick={props.closeMobileMenu}
           >
-            CONTACT
+            CONTACTO
           </Link>
         </li>
       </ul>
