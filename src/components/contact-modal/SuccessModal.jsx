@@ -3,9 +3,9 @@ import "./modal.scss";
 
 const successModal = (props) => (
   <div className="sucess__modal">
-    <p>Success!</p>
+    <p>¡Enviado!</p>
     <p>
-      Thank you for your email.<br></br>We will respond as soon as possible.
+      Gracias por tu mensaje.<br></br>Estaremos respondiendo a la brevedad.
     </p>
     <div role="button" tabIndex={0} className="modal__btn flex-center" onClick={props.closeModal} onKeyDown={props.closeModal}>
       <p>Ok</p>

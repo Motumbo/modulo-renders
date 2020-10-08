@@ -3,9 +3,9 @@ import "./modal.scss";
 
 const errorModal = (props) => (
     <div className="error__modal">
-      <p>Oooops!!!</p>
+      <p>¡Ups!</p>
       <p>
-        Something went wrong :{"("}</p>
+        Algo salió mal :{"("}</p>
       <div role="button" tabIndex={0} className="modal__btn flex-center" onClick={props.closeModal} onKeyDown={props.closeModal}>
         <p>Ok</p>
       </div>

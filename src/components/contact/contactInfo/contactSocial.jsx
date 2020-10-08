@@ -9,11 +9,11 @@ const contactSocial = () => (
   <Row>
     <Col xs={12}>
       <Row center="xs">
-        <Col xs={6} lg={3} className="contact__social">
-          <img src={InstagramIcon} alt="Instagram" />
+        <Col xs={6} lg={1} className="contact__social">
+          <a href="https://www.instagram.com/modulo.renders"><img src={InstagramIcon} alt="Instagram" /></a>
         </Col>
         <Col xs={6} lg={1} className="contact__social">
-          <img src={LinkedinIcon} alt="LinkedIn" />
+          <a href="https://www.linkedin.com/in/camila-bibbo"><img src={LinkedinIcon} alt="LinkedIn" /></a>
         </Col>
       </Row>
     </Col>

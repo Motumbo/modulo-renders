@@ -12,7 +12,8 @@ const partnerBox = () => (
         <Col xs={6} sm={6} md={6}>
           <div className="footer-box">
             <p>
-              © 2020 - Built by &lt;bebop /&gt;
+              © 2020 - Built by
+              <a href="https://nico-bebop.web.app/"> &lt;bebop /&gt;</a>             
             </p>
           </div>
         </Col>
